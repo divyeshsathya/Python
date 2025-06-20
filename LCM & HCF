@@ -1,0 +1,15 @@
+import math
+
+def find_hcf_and_lcm(num1, num2):
+    hcf = math.gcd(num1, num2)
+    lcm = (num1 * num2) // hcf
+    
+    return hcf, lcm
+
+number1 = int(input("Enter the first number: "))
+number2 = int(input("Enter the second number: "))
+
+hcf, lcm = find_hcf_and_lcm(number1, number2)
+
+print(f"The HCF of {number1} and {number2} is: {hcf}")
+print(f"The LCM of {number1} and {number2} is: {lcm}")
