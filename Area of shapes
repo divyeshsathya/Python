@@ -1,0 +1,37 @@
+def circle():
+  r=int(input("Enter the radius:"))
+  print("Area is",3.14*r*r)
+
+def sq(a):
+  print("Area is",a*a)
+
+def rect():
+  l=int(input("Enter the length:"))
+  b=int(input("Enter the breadth:"))
+  return l*b
+
+def tri():
+  b=int(input("Enter the base:"))
+  h=int(input("Enter the height:"))
+  return 0.5*b*h
+
+while(True):
+  print("1.Circle")
+  print("2.Square")
+  print("3.Rectangle")
+  print("4.Triangle")
+  ch=int(input("Enter the choice:"))
+  match ch:
+    case 1:
+      circle()
+    case 2:
+      a=int(input("Enter the side:"))
+      sq(a)
+    case 3:
+      res=rect()
+      print("Area is",res)
+    case 4:
+      res=tri()
+      print(res)
+    case _:
+      print("Invalid choice")
