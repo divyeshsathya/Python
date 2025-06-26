@@ -1,0 +1,4 @@
+import datetime
+year = int(input("Enter a year: "))
+dec_31 = datetime.date(year, 12, 31)
+print(f"December 31st of {year} is a {dec_31.strftime('%A')}")
