@@ -1,0 +1,45 @@
+class Emp:
+  com="TCS"
+  Tax_percentage= 10
+  profit=500000
+  def __init__(self,name,age,salary,share_percentage):
+    self.name = name
+    self.age = age
+    self.salary = salary
+    self.share_percentage = share_percentage
+    self.tax = 0
+    self.share = 0
+
+
+  def cal_tax(self):
+    self.tax = (self.salary * Emp.Tax_percentage*0.01)
+
+
+  def cal_share(self):
+    self.share = (Emp.profit * self.share_percentage*0.01)
+
+
+  def display(self):
+    print("Name:", self.name)
+    print("Age:", self.age)
+    print("Salary:", self.salary)
+    print("Tax:", self.tax)
+    print("Share:", self.share)
+   
+
+e1= Emp("Ram",25,50000,10)
+e2= Emp("Shyam",26,60000,20)
+e3= Emp("Mohan",27,70000,30)
+e4= Emp("Sohan",28,80000,40)
+e1.cal_tax()
+e1.cal_share()
+e1.display()
+e2.cal_tax()
+e2.cal_share()
+e2.display()
+e3.cal_tax()
+e3.cal_share()
+e3.display()
+e4.cal_tax()
+e4.cal_share()
+e4.display()
