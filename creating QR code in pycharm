@@ -1,0 +1,8 @@
+import qrcode
+msg = "Hello World"
+r = qrcode.QRCode()
+r.add_data(msg)
+r.make(fit=True)
+img = r.make_image(fill="black",back_color="white")
+img.save("qr.png")
+print("img saved correctly")
